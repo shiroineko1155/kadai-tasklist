@@ -1,0 +1,27 @@
+[31-Mar-2017 09:55:13 UTC] PHP Warning:  require_once(hero.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lesson-of/game.php on line 3
+[31-Mar-2017 09:55:13 UTC] PHP Stack trace:
+[31-Mar-2017 09:55:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 09:55:13 UTC] PHP Fatal error:  require_once(): Failed opening required 'hero.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lesson-of/game.php on line 3
+[31-Mar-2017 09:55:13 UTC] PHP Stack trace:
+[31-Mar-2017 09:55:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 09:56:31 UTC] PHP Warning:  require_once(hero.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lesson-of/game.php on line 3
+[31-Mar-2017 09:56:31 UTC] PHP Stack trace:
+[31-Mar-2017 09:56:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 09:56:31 UTC] PHP Fatal error:  require_once(): Failed opening required 'hero.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lesson-of/game.php on line 3
+[31-Mar-2017 09:56:31 UTC] PHP Stack trace:
+[31-Mar-2017 09:56:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 10:01:49 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/lesson-of/hero.php on line 15
+[31-Mar-2017 10:01:49 UTC] PHP Stack trace:
+[31-Mar-2017 10:01:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 10:07:16 UTC] PHP Fatal error:  Call to undefined method Game::start() in /home/ubuntu/workspace/lesson-of/game.php on line 19
+[31-Mar-2017 10:07:16 UTC] PHP Stack trace:
+[31-Mar-2017 10:07:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 10:10:52 UTC] PHP Fatal error:  Call to undefined method Game::start() in /home/ubuntu/workspace/lesson-of/game.php on line 19
+[31-Mar-2017 10:10:52 UTC] PHP Stack trace:
+[31-Mar-2017 10:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[31-Mar-2017 10:11:50 UTC] PHP Fatal error:  Call to undefined method Game::start() in /home/ubuntu/workspace/lesson-of/game.php on line 19
+[31-Mar-2017 10:11:50 UTC] PHP Stack trace:
+[31-Mar-2017 10:11:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-of/game.php:0
+[01-Apr-2017 13:56:20 UTC] PHP Fatal error:  Call to undefined function htmlspecialdhars() in /home/ubuntu/workspace/lesson-php-mysql/booklist.php on line 62
+[01-Apr-2017 13:56:21 UTC] PHP Stack trace:
+[01-Apr-2017 13:56:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-php-mysql/booklist.php:0
