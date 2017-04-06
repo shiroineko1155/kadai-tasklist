@@ -13,4 +13,4 @@
 
 Route::get('/', 'tasklistController@index');
 
-Route::resource('tasklist', 'tasklistController');
+Route::resource('tasklists', 'tasklistController');
