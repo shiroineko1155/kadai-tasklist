@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\tasklist;    // 追加
+
 class tasklistController extends Controller
 {
     /**
@@ -15,10 +17,14 @@ class tasklistController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
 
+    {
+        $tasklists = tasklist::all();
+
+        return view('tasklists.index', [
+            'tasklists' => $tasklists,
+    ]);
+    }
     /**
      * Show the form for creating a new resource.
      *
