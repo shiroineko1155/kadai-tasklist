@@ -32,7 +32,11 @@ class tasklistController extends Controller
      */
     public function create()
     {
-        //
+        $tasklist = new tasklist;
+
+        return view('tasklists.create', [
+            'tasklist' => $tasklist,
+        ]);
     }
 
     /**
@@ -43,7 +47,11 @@ class tasklistController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $tasklist = new tasklist;
+        $tasklist->content = $request->content;
+        $tasklist->save();
+
+        return redirect('/');
     }
 
     /**
@@ -54,7 +62,11 @@ class tasklistController extends Controller
      */
     public function show($id)
     {
-        //
+        $tasklist = tasklist::find($id);
+
+        return view('tasklists.show', [
+            'tasklist' => $tasklist,
+        ]);
     }
 
     /**
@@ -65,7 +77,11 @@ class tasklistController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tasklist = tasklist::find($id);
+
+        return view('tasklists.edit', [
+            'tasklist' => $tasklist,
+        ]);
     }
 
     /**
@@ -77,7 +93,11 @@ class tasklistController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $tasklist = tasklist::find($id);
+        $tasklist->content = $request->content;
+        $tasklist->save();
+
+        return redirect('/');
     }
 
     /**
@@ -88,6 +108,9 @@ class tasklistController extends Controller
      */
     public function destroy($id)
     {
-        //
+         $tasklist = tasklist::find($id);
+        $tasklist->delete();
+
+        return redirect('/');
     }
 }
