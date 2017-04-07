@@ -7,12 +7,11 @@
     @if (count($tasklists) > 0)
         <ul>
             @foreach ($tasklists as $tasklist)
-                <li>{{ $tasklist->content }}</li>
+               <li>{!! link_to_route('tasklists.show', $tasklist->id, ['id' => $tasklist->id]) !!} : {{ $tasklist->content }}</li>
             @endforeach
         </ul>
     @endif
 
-     @foreach ($tasklists as $tasklist)
-                <li>{!! link_to_route('tasklists.show', $tasklist->id, ['id' => $tasklist->id]) !!} : {{ $tasklist->content }}</li>
-            @endforeach
+     {!! link_to_route('tasklists.create', '新規メッセージの投稿') !!}
+     
 @endsection
