@@ -39,6 +39,17 @@ class tasklistController extends Controller
         ]);
     }
 
+   ...done.                                                                    
+   ...done.                                                                    
+ * Checking for tables which need an upgrade, are corrupt or were              
+not closed cleanly.                                                            
+shiroineko:~/workspace (master) $ cd kadai-tasklist                            
+shiroineko:~/workspace/kadai-tasklist (master) $ php artisan serve --host=$IP -
+-port=$POST                                                                    
+Laravel development server started on http://0.0.0.0:8000/                     
+                                                                               
+CollaborateOutlineDebugger
+
     /**
      * Store a newly created resource in storage.
      *
