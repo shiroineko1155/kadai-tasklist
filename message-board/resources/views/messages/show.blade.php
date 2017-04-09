@@ -1,3 +1,5 @@
+ @extends('layouts.app')
+
  <table class="table table-bordered">
         <tr>
             <th>id</th>

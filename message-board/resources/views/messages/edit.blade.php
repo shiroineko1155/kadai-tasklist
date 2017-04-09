@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <div class="row">
         <div class="col-xs-6">
             {!! Form::model($message, ['route' => ['messages.update', $message->id], 'method' => 'put']) !!}

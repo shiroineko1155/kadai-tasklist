@@ -25,3 +25,23 @@
 [01-Apr-2017 13:56:20 UTC] PHP Fatal error:  Call to undefined function htmlspecialdhars() in /home/ubuntu/workspace/lesson-php-mysql/booklist.php on line 62
 [01-Apr-2017 13:56:21 UTC] PHP Stack trace:
 [01-Apr-2017 13:56:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/lesson-php-mysql/booklist.php:0
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP Fatal error:  Call to undefined method stdClass::save() in /home/ubuntu/workspace/kadai-tasklist/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php(79) : eval()'d code on line 1
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP Stack trace:
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/kadai-tasklist/artisan:0
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   2. Illuminate\Foundation\Console\Kernel->handle() /home/ubuntu/workspace/kadai-tasklist/artisan:36
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   3. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php:107
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   4. Symfony\Component\Console\Application->doRun() /home/ubuntu/workspace/kadai-tasklist/vendor/symfony/console/Application.php:120
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/ubuntu/workspace/kadai-tasklist/vendor/symfony/console/Application.php:189
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   6. Illuminate\Console\Command->run() /home/ubuntu/workspace/kadai-tasklist/vendor/symfony/console/Application.php:843
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   7. Symfony\Component\Console\Command\Command->run() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Console/Command.php:136
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   8. Illuminate\Console\Command->execute() /home/ubuntu/workspace/kadai-tasklist/vendor/symfony/console/Command/Command.php:261
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP   9. Illuminate\Container\Container->call() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Console/Command.php:150
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  10. call_user_func_array:{/home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Container/Container.php:507}() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  11. Illuminate\Foundation\Console\TinkerCommand->fire() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Container/Container.php:507
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  12. Psy\Shell->run() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/Foundation/Console/TinkerCommand.php:54
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  13. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/kadai-tasklist/vendor/psy/psysh/src/Psy/Shell.php:273
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  14. Psy\Shell->doRun() /home/ubuntu/workspace/kadai-tasklist/vendor/symfony/console/Application.php:120
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  15. Psy\ExecutionLoop\ForkingLoop->run() /home/ubuntu/workspace/kadai-tasklist/vendor/psy/psysh/src/Psy/Shell.php:307
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  16. Psy\ExecutionLoop\Loop->run() /home/ubuntu/workspace/kadai-tasklist/vendor/psy/psysh/src/Psy/ExecutionLoop/ForkingLoop.php:79
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  17. Psy\ExecutionLoop\{closure}() /home/ubuntu/workspace/kadai-tasklist/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php:135
+[06-Apr-2017 01:04:41 Asia/Tokyo] PHP  18. eval() /home/ubuntu/workspace/kadai-tasklist/vendor/psy/psysh/src/Psy/ExecutionLoop/Loop.php:79

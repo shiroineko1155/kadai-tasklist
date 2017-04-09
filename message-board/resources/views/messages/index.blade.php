@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
  @if (count($messages) > 0)
         <table class="table table-striped">
             <thead>
@@ -18,4 +20,5 @@
             </tbody>
         </table>
     @endif
+   
     {!! link_to_route('messages.create', '新規メッセージの投稿', null, ['class' => 'btn btn-primary']) !!}
