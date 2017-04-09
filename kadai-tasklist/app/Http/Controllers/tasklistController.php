@@ -1,14 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
 use App\tasklist;    // 追加
-
 class tasklistController extends Controller
 {
     /**
@@ -17,10 +12,8 @@ class tasklistController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-
     {
         $tasklists = tasklist::all();
-
         return view('tasklists.index', [
             'tasklists' => $tasklists,
     ]);
@@ -33,23 +26,10 @@ class tasklistController extends Controller
     public function create()
     {
         $tasklist = new tasklist;
-
         return view('tasklists.create', [
             'tasklist' => $tasklist,
         ]);
     }
-
-   ...done.                                                                    
-   ...done.                                                                    
- * Checking for tables which need an upgrade, are corrupt or were              
-not closed cleanly.                                                            
-shiroineko:~/workspace (master) $ cd kadai-tasklist                            
-shiroineko:~/workspace/kadai-tasklist (master) $ php artisan serve --host=$IP -
--port=$POST                                                                    
-Laravel development server started on http://0.0.0.0:8000/                     
-                                                                               
-CollaborateOutlineDebugger
-
     /**
      * Store a newly created resource in storage.
      *
@@ -68,10 +48,8 @@ CollaborateOutlineDebugger
         $message->status = $request->status;    // 追加
         $tasklist->content = $request->content;
         $tasklist->save();
-
         return redirect('/');
     }
-
     /**
      * Display the specified resource.
      *
@@ -81,12 +59,10 @@ CollaborateOutlineDebugger
     public function show($id)
     {
         $tasklist = tasklist::find($id);
-
         return view('tasklists.show', [
             'tasklist' => $tasklist,
         ]);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -96,12 +72,10 @@ CollaborateOutlineDebugger
     public function edit($id)
     {
         $tasklist = tasklist::find($id);
-
         return view('tasklists.edit', [
             'tasklist' => $tasklist,
         ]);
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -120,10 +94,8 @@ CollaborateOutlineDebugger
         $message->status = $request->status;    // 追加
         $tasklist->content = $request->content;
         $tasklist->save();
-
         return redirect('/');
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -134,7 +106,6 @@ CollaborateOutlineDebugger
     {
          $tasklist = tasklist::find($id);
         $tasklist->delete();
-
         return redirect('/');
     }
 }
