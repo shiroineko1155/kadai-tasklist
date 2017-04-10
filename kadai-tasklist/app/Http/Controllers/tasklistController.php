@@ -40,12 +40,12 @@ class tasklistController extends Controller
     {
         $this->validate($request, [
             
-            'status' => 'required|max10',
+            'status' => 'required|max:10',
             'content' => 'required|max:255',
             ]);
             
         $tasklist = new tasklist;
-        $message->status = $request->status;    // 追加
+        $tasklist->status = $request->status;    // 追加
         $tasklist->content = $request->content;
         $tasklist->save();
         return redirect('/');
@@ -91,7 +91,7 @@ class tasklistController extends Controller
         ]);
         
         $tasklist = tasklist::find($id);
-        $message->status = $request->status;    // 追加
+        $tasklist->status = $request->status;    // 追加
         $tasklist->content = $request->content;
         $tasklist->save();
         return redirect('/');
