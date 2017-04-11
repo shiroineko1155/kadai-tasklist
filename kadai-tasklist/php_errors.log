@@ -831,3 +831,9 @@
 [11-Apr-2017 23:04:04 Asia/Tokyo] PHP  49. Illuminate\View\View->getContents() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/View/View.php:118
 [11-Apr-2017 23:04:04 Asia/Tokyo] PHP  50. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/View/View.php:147
 [11-Apr-2017 23:04:04 Asia/Tokyo] PHP  51. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/kadai-tasklist/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:58
+[11-Apr-2017 14:34:16 UTC] PHP Warning:  require(/home/ubuntu/workspace/kadai-tasklist/public/../bootstrap/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/kadai-tasklist/public/index.php on line 22
+[11-Apr-2017 14:34:16 UTC] PHP Stack trace:
+[11-Apr-2017 14:34:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/kadai-tasklist/public/index.php:0
+[11-Apr-2017 14:34:16 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/kadai-tasklist/public/../bootstrap/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/kadai-tasklist/public/index.php on line 22
+[11-Apr-2017 14:34:16 UTC] PHP Stack trace:
+[11-Apr-2017 14:34:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/kadai-tasklist/public/index.php:0
