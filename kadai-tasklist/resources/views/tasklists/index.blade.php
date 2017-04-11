@@ -1,17 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <h1>タスク一覧</h1>
+ 
+<div class="row">
+<div class="col-sm-offset-2 col-sm-8">
+    <div class="col-md-offset-2 col-md-8">
+    <div class="col-lg-offset-3 col-lg-6"> 
 
     @if (count($tasklists) > 0)
-        <ul>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>タスク</th>
+                    <th>ステータス</th>
+                </tr>
+            </thead>
+        <tbody>
             @foreach ($tasklists as $tasklist)
-               <li>{!! link_to_route('tasklists.show', $tasklist->id, ['id' => $tasklist->id]) !!} : {{ $tasklist->status }} > {{ $tasklist->content }}</li>
+            <tr>
+                <td>{!! link_to_route('tasklists.show', $tasklist->id, ['id' => $tasklist->id]) !!}</td>
+                <td>{{ $tasklist->content }}</td>
+                <td>{{ $tasklist->status }}</td>
+            </tr>    
             @endforeach
-        </ul>
+        </tbody>    
+    </table>    
     @endif
 
-     {!! link_to_route('tasklists.create', '新規メッセージの投稿') !!}
+     {!! link_to_route('tasklists.create', '新規タスクの投稿', null, ['class' => 'btn btn-primary']) !!}
+     
+</div>
+</div>
+</div>
+</div>
      
 @endsection
